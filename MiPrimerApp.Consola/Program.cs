@@ -10,9 +10,9 @@ namespace MiPrimerApp.Consola
         public string direccion;
         public int familia;
         public float estatura;
-        public int mascota;
-        public string color;
-        public int amigos;
+        public int cantidadMascotas;
+        public string superheroeFavorito;
+        public int cantidadAmigos;
         public string ciudad;
     }
     class Program
@@ -35,9 +35,9 @@ namespace MiPrimerApp.Consola
             Console.Write("Ingrese su estatura: ");
             float estatura = float.Parse(Console.ReadLine());
             Console.Write("Cuantas mascotas tiene?: ");
-            int mascota = int.Parse(Console.ReadLine());
-            Console.Write("Color favorito: ");
-            var color = Console.ReadLine();
+            int mascotas = int.Parse(Console.ReadLine());
+            Console.Write("Cual es su superheroe favorito?: ");
+            var heroe = Console.ReadLine();
             Console.Write("Cuantos amigos tiene? ");
             int amigos = int.Parse(Console.ReadLine());
             Console.Write("De que ciudad es? ");
@@ -48,17 +48,17 @@ namespace MiPrimerApp.Consola
             persona.direccion = direccion;
             persona.familia = familia;
             persona.estatura = estatura;
-            persona.mascota = mascota;
-            persona.color = color;
-            persona.amigos = amigos;
-            persona.ciudad = ciudad;           
+            persona.cantidadMascotas = mascotas;
+            persona.superheroeFavorito = heroe;
+            persona.cantidadAmigos = amigos;
+            persona.ciudad = ciudad;
             Console.WriteLine("**Usted ingreso lo siguiente** ");
-            Console.Write("Nombre: "+ persona.nombre +"\n");
-            Console.Write("Edad: " + persona.edad+"\n");
-            Console.Write("Peso: " + persona.peso+" kilogramos"+"\n");
+            Console.Write("Nombre: " + persona.nombre + "\n");
+            Console.Write("Edad: " + persona.edad + "\n");
+            Console.Write("Peso: " + persona.peso + " kilogramos" + "\n");
             Console.Write("Direccion: " + persona.direccion + "\n");
             Console.Write("Con usted viven: " + persona.familia + " personas" + "\n");
-            Console.Write("Su estatura es:  " + persona.estatura +" metros"+ "\n");
+            Console.Write("Su estatura es:  " + persona.estatura + " metros" + "\n");
             Console.Write("Usted tiene: " + persona.mascota + "\n");
             Console.Write("Su color favorito es: " + persona.color + "\n");
             Console.Write("Usted tiene: " + persona.amigos + " amigos" + "\n");
